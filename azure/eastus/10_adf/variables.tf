@@ -3,5 +3,8 @@ variable "adf_name" {
 }
 
 variable "location" {
-  default = "eastus"
+}
+
+variable "resource_group_name" {
+  
 }

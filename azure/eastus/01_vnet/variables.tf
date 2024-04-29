@@ -1,5 +1,7 @@
+variable "resource_group_name" {
+  
+}
 variable "location" {
-  default = "eastus"
 }
 variable "resource_group_name_prefix" {
   type        = string
