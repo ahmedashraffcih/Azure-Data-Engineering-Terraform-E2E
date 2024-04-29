@@ -1,19 +1,8 @@
-variable "name" {
-  default = "myTFVnet"
-}
-
-variable "address_space" {
-  default = ["10.0.0.0/16"]
-}
-
 variable "location" {
   default = "eastus"
 }
-
-variable "subnet_name" {
-  default = "TFsubnet"
-}
-
-variable "subnet_address_prefix" {
-  default = "10.0.1.0/24"
+variable "resource_group_name_prefix" {
+  type        = string
+  default     = "rg"
+  description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
 }
