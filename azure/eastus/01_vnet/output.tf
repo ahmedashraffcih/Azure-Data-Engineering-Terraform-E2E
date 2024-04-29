@@ -12,3 +12,13 @@ output "subnet_name_2" {
   description = "The name of the created subnet 2."
   value       = azurerm_subnet.my_terraform_subnet_2.name
 }
+
+output "subnet_id_1" {
+  description = "The ID of subnet 1."
+  value       = azurerm_subnet.my_terraform_subnet_1.id
+}
+
+output "subnet_id_2" {
+  description = "The ID of subnet 22."
+  value       = azurerm_subnet.my_terraform_subnet_2.id
+}
